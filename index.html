@@ -62,8 +62,8 @@
         }
         button:nth-child(2){
             margin-left: 200px;
-            background-color: red;
-            color: white;
+            background-color: white;
+            color: red;
 
         }
         button:nth-child(1){
@@ -98,7 +98,7 @@
         const noBtnRect=noBtn.getBoundingClientRect(); 
        
         yesBtn.addEventListener('click', ()=>{ 
-        question.innerHTML='I Love you Too :)'; 
+        question.innerHTML='I Love you Too :) 😍❤️'; 
         }); 
         noBtn.addEventListener('mouseover', ()=>{ 
         const i=Math.floor(Math.random()* (wrapperRect.width-noBtnRect.width)) 
@@ -108,6 +108,7 @@
        
         noBtn.style.left=i+'px'; 
         noBtn.style.top=j+'px';
+    });
     </script>
         
         
