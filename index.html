@@ -23,7 +23,7 @@
         }
         .wrapper{
             position: relative;
-            width: 600px;
+            width: 700px;
             height: 400px;
             background-color: aliceblue;
             border-radius: 20px;
@@ -42,6 +42,15 @@
 
         }
 
+        a{
+            justify-content: first baseline;
+            font-size: medium;
+            color: hsl(311, 90%, 64%);
+            margin: 50%;
+        }
+
+
+
         .btn-group{
             width: 100px;
             height: 40px;
@@ -52,7 +61,7 @@
 
         button{
             position: absolute;
-            width: 100px;
+            width: 90px;
             height: inherit;
             font-size: 30px;
             background-color: aqua;
@@ -76,6 +85,8 @@
 </head>
 <body>
 
+    <a href="https://web.facebook.com/share/v/12F8asHgNEo/">ព្រមហើយចុចមក😘</a>
+
     <div class="wrapper">
         <h2 class="question" align="center"> 
             I LOVE YOU <br>
@@ -84,6 +95,7 @@
         <div class="btn-group"> 
             <button class="yes-btn">ព្រម</button>
             <button class="no-btn">មិន</button>
+            
 
         </div>
 
@@ -98,8 +110,10 @@
         const noBtnRect=noBtn.getBoundingClientRect(); 
        
         yesBtn.addEventListener('click', ()=>{ 
-        question.innerHTML='I Love you Too :) 😍❤️'; 
+        question.innerHTML='I Love you Too :) 😍❤️ ' ; 
+        
         }); 
+        
         noBtn.addEventListener('mouseover', ()=>{ 
         const i=Math.floor(Math.random()* (wrapperRect.width-noBtnRect.width)) 
         +1; 
